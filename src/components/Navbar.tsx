@@ -9,23 +9,23 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
   <Menu setActive={setActive}>
-    <Link href="">
+    <Link href="/">
     <MenuItem setActive={setActive} active={active} item={"Home"}>
    
     </MenuItem>
     </Link>
    
-    <Link href="">
+    <Link href="/courses">
     <MenuItem setActive={setActive} active={active} item={"Courses"}>
     <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Nodejs</HoveredLink>
-            <HoveredLink href="/individual">Nextjs</HoveredLink>
+            <HoveredLink href="/courses/nodejs">Nodejs</HoveredLink>
+            <HoveredLink href="/">Nextjs</HoveredLink>
             <HoveredLink href="/team">ReactJs</HoveredLink>
             <HoveredLink href="/enterprise">Javascript</HoveredLink>
           </div>
     </MenuItem>
     </Link>
-    <Link href="">
+    <Link href="/contact">
     <MenuItem setActive={setActive} active={active} item={"Contact Us"}>
    
     </MenuItem>
